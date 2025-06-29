@@ -18,35 +18,35 @@ A beautiful, customizable React component that creates flowing waves of binary d
 
 ### Option 1: Using shadcn/ui (Recommended)
 
-\`\`\`bash
+```bash
 npx shadcn@latest add https://raw.githubusercontent.com/Rxflex/BinaryWave/main/registry.json
-\`\`\`
+```
 
 ### Option 2: Using npm
 
-\`\`\`bash
+```bash
 npm install binary-wave-react
-\`\`\`
+```
 
 ### Option 3: Manual Installation
 
 1. Copy the component file to your project:
 
-\`\`\`bash
+```bash
 curl -o src/components/ui/binary-wave.tsx https://raw.githubusercontent.com/Rxflex/BinaryWave/main/src/components/binary-wave.tsx
-\`\`\`
+```
 
 2. Import and use:
 
-\`\`\`tsx
+```tsx
 import BinaryWave from '@/components/ui/binary-wave'
-\`\`\`
+```
 
 ## 📖 Usage
 
 ### Basic Usage
 
-\`\`\`tsx
+```tsx
 import BinaryWave from '@/components/ui/binary-wave'
 
 export default function App() {
@@ -56,11 +56,11 @@ export default function App() {
     </div>
   )
 }
-\`\`\`
+```
 
 ### Advanced Usage
 
-\`\`\`tsx
+```tsx
 import BinaryWave from '@/components/ui/binary-wave'
 
 export default function App() {
@@ -82,11 +82,11 @@ export default function App() {
     />
   )
 }
-\`\`\`
+```
 
 ### Using Presets
 
-\`\`\`tsx
+```tsx
 import BinaryWave, { presets } from '@/components/ui/binary-wave'
 
 export default function App() {
@@ -98,7 +98,7 @@ export default function App() {
     />
   )
 }
-\`\`\`
+```
 
 ## 🎛️ API Reference
 
@@ -106,22 +106,22 @@ export default function App() {
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
-| \`width\` | \`number\` | \`800\` | Canvas width in pixels |
-| \`height\` | \`number\` | \`400\` | Canvas height in pixels |
-| \`density\` | \`number\` | \`100\` | Number of binary digits (50-300) |
-| \`speed\` | \`number\` | \`1\` | Animation speed multiplier (0.1-3) |
-| \`waveAmplitude\` | \`number\` | \`50\` | Wave height in pixels (0-100) |
-| \`waveFrequency\` | \`number\` | \`0.02\` | Wave frequency (0.005-0.05) |
-| \`fontSize\` | \`number\` | \`14\` | Font size of digits (8-24) |
-| \`colors\` | \`object\` | \`{...}\` | Color configuration |
-| \`colors.background\` | \`string\` | \`"#000000"\` | Background color |
-| \`colors.primary\` | \`string\` | \`"#ffffff"\` | Color for "1" digits |
-| \`colors.secondary\` | \`string\` | \`"#888888"\` | Color for "0" digits |
-| \`className\` | \`string\` | \`""\` | Additional CSS classes |
+| `width` | `number` | `800` | Canvas width in pixels |
+| `height` | `number` | `400` | Canvas height in pixels |
+| `density` | `number` | `100` | Number of binary digits (50-300) |
+| `speed` | `number` | `1` | Animation speed multiplier (0.1-3) |
+| `waveAmplitude` | `number` | `50` | Wave height in pixels (0-100) |
+| `waveFrequency` | `number` | `0.02` | Wave frequency (0.005-0.05) |
+| `fontSize` | `number` | `14` | Font size of digits (8-24) |
+| `colors` | `object` | `{...}` | Color configuration |
+| `colors.background` | `string` | `"#000000"` | Background color |
+| `colors.primary` | `string` | `"#ffffff"` | Color for "1" digits |
+| `colors.secondary` | `string` | `"#888888"` | Color for "0" digits |
+| `className` | `string` | `""` | Additional CSS classes |
 
 ### Presets
 
-\`\`\`tsx
+```tsx
 import { presets } from '@/components/ui/binary-wave'
 
 // Available presets:
@@ -130,12 +130,12 @@ presets.ocean      // Blue ocean waves
 presets.matrix     // Green Matrix style
 presets.storm      // Chaotic storm effect
 presets.calm       // Gentle calm waves
-\`\`\`
+```
 
 ## 🎨 Examples
 
 ### Matrix Effect
-\`\`\`tsx
+```tsx
 <BinaryWave
   density={200}
   speed={1.5}
@@ -145,10 +145,10 @@ presets.calm       // Gentle calm waves
     secondary: "#008f11"
   }}
 />
-\`\`\`
+```
 
 ### Ocean Waves
-\`\`\`tsx
+```tsx
 <BinaryWave
   density={150}
   speed={0.6}
@@ -159,10 +159,10 @@ presets.calm       // Gentle calm waves
     secondary: "#0088bb"
   }}
 />
-\`\`\`
+```
 
 ### Calm Digital Sea
-\`\`\`tsx
+```tsx
 <BinaryWave
   density={100}
   speed={0.3}
@@ -174,7 +174,7 @@ presets.calm       // Gentle calm waves
     secondary: "#446666"
   }}
 />
-\`\`\`
+```
 
 ## 🎯 Use Cases
 
@@ -189,33 +189,33 @@ presets.calm       // Gentle calm waves
 
 ### Local Development
 
-\`\`\`bash
+```bash
 git clone https://github.com/Rxflex/BinaryWave.git
 cd BinaryWave
 npm install
 npm run dev
-\`\`\`
+```
 
 ### Building
 
-\`\`\`bash
+```bash
 npm run build
-\`\`\`
+```
 
 ### Testing
 
-\`\`\`bash
+```bash
 npm run test
-\`\`\`
+```
 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the project
-2. Create your feature branch (\`git checkout -b feature/AmazingFeature\`)
-3. Commit your changes (\`git commit -m 'Add some AmazingFeature'\`)
-4. Push to the branch (\`git push origin feature/AmazingFeature\`)
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
 ## 📄 License
@@ -237,4 +237,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 Made with ❤️ by [Rxflex](https://github.com/Rxflex)
-\`\`\`
+```
